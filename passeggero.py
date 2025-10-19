@@ -3,6 +3,12 @@ class Passeggero:
         self.codice = codice
         self.nome = nome
         self.cognome = cognome
+        self.assegnato = False
+        self.cabina = None
 
     def __str__(self):
-        return f"Codice passeggero: {self.codice}, Nome: {self.nome}, Cognome: {self.cognome}"
+        stato = "Assegnato" if self.assegnato else "Non assegnato"
+        if self.cabina:
+            return f"Codice passeggero: {self.codice}, Nome: {self.nome}, Cognome: {self.cognome}, Stato: {stato}, Cabina: {self.cabina}"
+        else:
+            return f"Codice passeggero: {self.codice}, Nome: {self.nome}, Cognome: {self.cognome}, Stato: {stato}"

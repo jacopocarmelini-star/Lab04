@@ -21,7 +21,7 @@ def main():
             nuovo_nome = input("Inserisci il nuovo nome della crociera: ")
             # TODO: Aggiorna il nome della crociera
             crociera.nome = nuovo_nome
-            print(f"Nuovo nome: {nuovo_nome}")
+            print(f"Nuovo nome della crociera: {nuovo_nome}")
 
         elif scelta == "2":
             file_path = "dati_crociera.csv"
